@@ -15,8 +15,6 @@
 <button id="mybtn">验证地址</button>
 <p id="res"></p>
 </body>
-
-
 </html>
 <script>
   var dappContactAddress = "n1soM3k87qvmCc35E52MXhBC5zq8ZUZ8hC4"; /*DApp智能合约地址*/
@@ -42,7 +40,7 @@
             "function": callFunction, /*调用函数*/
             "args": callArgs/*参数*/
         }
-        // 
+        /*调用方法使用智能合约*/
         neb.api.call(from, dappContactAddress, value, nonce, gas_price, gas_limit, contract).then(function (res) {
             console.log(res);
         })
